@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
@@ -14,7 +15,9 @@ public class ItemSlotPhysical : MonoBehaviour
     [SerializeField] private Transform placedItemHandle;
 
     [SerializeField] private UnityEvent unityEventOnItemPlaced;
+    public event Action onItemPlaced;
     [SerializeField] private UnityEvent unityEventOnItemRemoved;
+    public event Action onItemRemoved;
 
     [SerializeField] private GameObject prompter;
 
@@ -54,6 +57,7 @@ public class ItemSlotPhysical : MonoBehaviour
         placedItemObject = Instantiate(item.STAT_itemModel,placedItemHandle);
 
         unityEventOnItemPlaced.Invoke();
+        onItemPlaced?.Invoke();
     }
 
     [Button] public void TakePlacedItem()
@@ -63,5 +67,13 @@ public class ItemSlotPhysical : MonoBehaviour
         placedItem = null;
 
         unityEventOnItemRemoved.Invoke();
+        onItemRemoved?.Invoke();
+    }
+
+    public bool QueryContainsAllowedItem()
+    {
+        if (allowedItems.Contains(placedItem)){ return true; }
+
+        return false;
     }
 }

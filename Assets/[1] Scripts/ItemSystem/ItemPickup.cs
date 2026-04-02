@@ -51,8 +51,10 @@ public class ItemPickup : MonoBehaviour
 
     public void Pickup()
     {
-        Inventory.AddItem(itemToBePickedUp);
+        if (itemToBePickedUp.STAT_collectible){  }
+        else { Inventory.AddItem(itemToBePickedUp); }
         SFX.Play(pickupSFX, transform.position);
         unityEventOnItemPickup.Invoke();
-        Destroy(gameObject); }
+        Destroy(gameObject); 
+    }
 }

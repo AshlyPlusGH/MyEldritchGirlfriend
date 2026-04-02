@@ -184,6 +184,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 3a8228e4534761841beb462290be5f6e, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3a8228e4534761841beb462290be5f6e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 60ea1fab773f61d408541b6919088b2e, type: 2}
@@ -272,19 +276,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6380086764015880555, guid: a1151e1477de0024397f0667d45adebe, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.41994664
+      value: -0.10570424
       objectReference: {fileID: 0}
     - target: {fileID: 6380086764015880555, guid: a1151e1477de0024397f0667d45adebe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.044052113
+      value: 0.019918352
       objectReference: {fileID: 0}
     - target: {fileID: 6380086764015880555, guid: a1151e1477de0024397f0667d45adebe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9015324
+      value: 0.9770039
       objectReference: {fileID: 0}
     - target: {fileID: 6380086764015880555, guid: a1151e1477de0024397f0667d45adebe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09457011
+      value: 0.18410149
       objectReference: {fileID: 0}
     - target: {fileID: 6380086764015880555, guid: a1151e1477de0024397f0667d45adebe, type: 3}
       propertyPath: m_AnchoredPosition.x
