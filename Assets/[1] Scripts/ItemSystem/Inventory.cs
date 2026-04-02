@@ -53,6 +53,8 @@ public class Inventory : MonoBehaviour
         public static void AddItem(soDATA_Item itemToAdd)
         {
             if (QueryIsFull()){ Debug.Log("Item was added but Inventory was too full!"); }
+
+            if (GetSelectedItem() == null){ contents.Add(selectedSlot,itemToAdd); UpdateUI(); return; }
             for (int i = 0; i <= inventorySize.max; i++)
             {
                 if (!contents.ContainsKey(i)){ contents.Add(i,itemToAdd); break; }
@@ -62,9 +64,15 @@ public class Inventory : MonoBehaviour
         }
         public static void RemoveItem(int position)
         {
-            if (!contents.ContainsKey(position)){ return; }
-
+                if (!contents.ContainsKey(position)){ return; }
             contents.Remove(position);
+
+            UpdateUI();
+        }
+        public static void RemoveSelectedItem()
+        {
+                if (!contents.ContainsKey(selectedSlot)){ return; }
+            contents.Remove(selectedSlot);
 
             UpdateUI();
         }
@@ -97,8 +105,21 @@ public class Inventory : MonoBehaviour
         {
                 if (!contents.ContainsKey(slotPosition)){ return; }
             soDATA_Item itemUsed = contents[slotPosition];
+                if (itemUsed.STAT_itemUseEffect == null){ return; }
             RemoveItem(slotPosition);
             itemUsed.STAT_itemUseEffect.Apply();
+        }
+        public static soDATA_Item GetSelectedItem()
+        {
+                if (!contents.ContainsKey(selectedSlot)){ return null; }
+            return contents[selectedSlot];
+        }
+        public static soDATA_Item PopSelectedItem()
+        {
+                if (!contents.ContainsKey(selectedSlot)){ return null; }
+            soDATA_Item selectedItem = contents[selectedSlot];
+            RemoveItem(selectedSlot);
+            return selectedItem;
         }
     #endregion
 

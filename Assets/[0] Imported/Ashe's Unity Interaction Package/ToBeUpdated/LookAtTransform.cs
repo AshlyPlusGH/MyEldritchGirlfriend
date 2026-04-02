@@ -1,3 +1,6 @@
+using System;
+using NaughtyAttributes;
+using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -9,9 +12,10 @@ public class LookAtTransform : MonoBehaviour
     [Space(10)]
 
     [SerializeField] private Transform target;
+    [SerializeField, Tag] private string targetTagFindOnAwake;
 
     void Awake(){ Setup(); }
-    public void Setup(){  }
+    public void Setup(){ if (target != null){ return; } target = GameObject.FindWithTag(targetTagFindOnAwake).transform; }
 
     void Update()
     {
