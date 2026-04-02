@@ -16,20 +16,17 @@ namespace Ash{
                 {
                     case EFFECT_ExplicitType.None:
                         break;
-                    /*
-                    case EFFECT_ExplicitType.ReturnAllDrawnCardsToDecks:
-                        FindFirstObjectByType<PLAYER_Deck>().ReturnAllFriendlyCards();
-                        FindFirstObjectByType<ENEMY_Deck>().ReturnAllEnemyCards();
+                    case EFFECT_ExplicitType.ThrowKnife:
+                        KnifeThrower.ThrowKnife();
                         break;
-                    */
                 }
             }
         }
 
         enum EFFECT_ExplicitType
         {
-            None
-            //ReturnAllDrawnCardsToDecks,
+            None,
+            ThrowKnife
         }
     }
 }

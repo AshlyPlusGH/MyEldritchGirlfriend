@@ -14,7 +14,7 @@ namespace Ash {
         [SerializeField] private float delay;
         [SerializeField] private UnityEvent unityEvent;
 
-        [SerializeField] private bool runOnce;
+        [SerializeField] private bool runOncePerApplication;
         private static GenericDictionary<GUID,bool> hasRanData = new();
 
         private GUID guid;
@@ -27,7 +27,7 @@ namespace Ash {
         private IEnumerator COROUTINE_TriggerEvent()
         {
                 if (!hasRanData.ContainsKey(guid)){}
-                else if (runOnce && hasRanData[guid]){ yield break; }
+                else if (runOncePerApplication && hasRanData[guid]){ yield break; }
 
             if (hasRanData.ContainsKey(guid)){ hasRanData[guid] = true; }
             else { hasRanData.Add(new KeyValuePair<GUID, bool>(guid,true)); }

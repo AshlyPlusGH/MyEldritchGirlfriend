@@ -10,8 +10,20 @@ public class GameManager : MonoBehaviour
 
     [Space(10)]
 
-    [SerializeField] private int var1;
+    [SerializeField] private GameObject parent2D;
+    [SerializeField] private GameObject parent3D;
 
     void Awake(){ Setup(); }
     public void Setup(){  }
+
+    [Button] public void SwitchTo2D()
+    {
+        parent3D.SetActive(false);
+        parent2D.SetActive(true);
+    }
+    [Button] public void SwitchTo3D()
+    {
+        parent2D.SetActive(false);
+        parent3D.SetActive(true);
+    }
 }
