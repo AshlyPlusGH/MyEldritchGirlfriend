@@ -36,6 +36,7 @@ namespace Ash {
             if (instance == null)
             {
                 instance = this;
+                gameObject.transform.SetParent(null);
                 DontDestroyOnLoad(gameObject);
             }
             else

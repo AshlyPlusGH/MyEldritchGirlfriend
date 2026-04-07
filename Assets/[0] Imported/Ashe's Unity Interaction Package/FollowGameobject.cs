@@ -15,6 +15,8 @@ namespace Ash {
         void Awake(){ Setup(); }
         void Setup()
         {
+            if (target == null){ this.enabled = false; return; }
+
             offset = transform.position;
         }
 

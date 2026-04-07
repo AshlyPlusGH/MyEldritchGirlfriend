@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Rendering.Universal;
 
 namespace Ash {
     public class CAMERA_Zoom : MonoBehaviour
@@ -10,8 +9,8 @@ namespace Ash {
 
         [Space(10)]
         
-        [SerializeField] private int zoomMax = 128;
-        [SerializeField] private int zoomMin = 25;
+        //[SerializeField] private int zoomMax = 128;
+        //[SerializeField] private int zoomMin = 25;
 
         [Space(10)]
 
