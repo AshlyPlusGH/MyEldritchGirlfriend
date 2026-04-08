@@ -1270,7 +1270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7994300896244683445, guid: 0377d42117c1f8742ac8a9faf1e72052, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8871304080386141605, guid: 0377d42117c1f8742ac8a9faf1e72052, type: 3}
       propertyPath: gameManager
@@ -1633,7 +1633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3849947022128842442, guid: c392d365cdcf29e41b9776a082a724f2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4887426203759561278, guid: c392d365cdcf29e41b9776a082a724f2, type: 3}
       propertyPath: m_AnchorMax.y
