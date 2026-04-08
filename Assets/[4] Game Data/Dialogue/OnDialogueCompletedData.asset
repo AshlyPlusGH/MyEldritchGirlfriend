@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f44e79e7b95124685cc609f946b481, type: 3}
+  m_Name: OnDialogueCompletedData
+  m_EditorClassIdentifier: Assembly-CSharp::soDATA_OnDialogueCompletedEffectTable
+  soDATA_data:
+    list:
+    - Key: Day_One_Introduction
+      Value: {fileID: 11400000, guid: 5c5872e871a4b644a82971e2ea9855f9, type: 2}
+    keyCollision: 0

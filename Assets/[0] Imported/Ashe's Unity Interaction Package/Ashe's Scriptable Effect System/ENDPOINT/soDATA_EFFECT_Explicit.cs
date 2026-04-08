@@ -19,6 +19,12 @@ namespace Ash{
                     case EFFECT_ExplicitType.ThrowKnife:
                         KnifeThrower.ThrowKnife();
                         break;
+                    case EFFECT_ExplicitType.SwitchTo3D:
+                        GameManager.SwitchTo3D();
+                        break;
+                    case EFFECT_ExplicitType.SwitchTo2D:
+                        GameManager.SwitchTo2D();
+                        break;
                 }
             }
         }
@@ -26,7 +32,9 @@ namespace Ash{
         enum EFFECT_ExplicitType
         {
             None,
-            ThrowKnife
+            ThrowKnife,
+            SwitchTo3D,
+            SwitchTo2D
         }
     }
 }

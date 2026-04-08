@@ -3,24 +3,18 @@ using Yarn.Unity;
 
 public class UI_DialogueStarter : MonoBehaviour
 {
+    [SerializeField] private bool debug;
+        private void Log(string contents){ if (debug){ Debug.Log(contents); }}
+
+    [Space(10)]
+
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private string startNode = "Intro";
-    [SerializeField] private GameManager gameManager;
 
     private void OnEnable()
     {
-        dialogueRunner.onDialogueComplete.RemoveListener(OnDialogueComplete);
-        dialogueRunner.onDialogueComplete.AddListener(OnDialogueComplete);
+        Log("Starting Dialogue!");
+        
         _ = dialogueRunner.StartDialogue(startNode);
-    }
-
-    private void OnDisable()
-    {
-        dialogueRunner.onDialogueComplete.RemoveListener(OnDialogueComplete);
-    }
-
-    private void OnDialogueComplete()
-    {
-        gameManager.SwitchTo3D();
     }
 }

@@ -91,7 +91,8 @@ public class Inventory : MonoBehaviour
         }
         public static void UpdateUI()
         {
-            FindAnyObjectByType<UI_Inventory>().UpdateUI();
+            UI_Inventory InventoryUI = FindAnyObjectByType<UI_Inventory>();
+            InventoryUI?.UpdateUI();
         }
         public static void SetSelectedSlot(int newSelectedSlot)
         {

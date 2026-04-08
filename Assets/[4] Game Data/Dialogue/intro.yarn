@@ -1,4 +1,7 @@
+//Alt-Z to enable Word-Wrap
+
 title: Intro
+position: -76,-72
 ---
 She looks at you without blinking.
 Girl: You came.
@@ -8,4 +11,47 @@ Girl: Good.
 -> "Why am I here?"
     You: Why am I here?
     Girl: You already know.
+===
+
+title: Day_One_Introduction
+color: green
+position: 46,101
+---
+Voice: Hey you came!
+You turn to see the bouncy silhouette of Megan running towards you!
+Megan: Ready for our date?
+-> "Yeah!"
+    Megan: Thats the spirit! #Megan:Talking #Tag2Example
+-> "No..."
+    She sticks her tongue out.
+    Megan: Neither am I!
+-> "Date?!"
+    Megan: Yeah come on you promised!
+Megan: Let's Go!
+<<jump Day_One_Body>>
+===
+
+title: Day_One_Body
+color: green
+position: 47,282
+---
+...
+A buttery fog settles in around the two of you.
+The old La'Gato theatre creaks and splutters into life as the morning's scheduled entertainment flickers into motion on the screen.
+DATE GOES HERE...
+Trigger 3D Scene Change...
+===
+
+title: Day_Two_PLACEHOLDER
+color: yellow
+position: 317,290
+---
+DAY 2
+===
+
+title: Day_Three_PLACEHOLDER
+color: red
+position: 327,498
+---
+DAY 3
 ===

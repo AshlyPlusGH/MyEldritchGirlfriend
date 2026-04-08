@@ -1,9 +1,16 @@
 {
-    "projectFileVersion": 4,
-    "sourceFiles": [
-        "***~*"
-    ],
-    "localisation": {},
-    "baseLanguage": "en",
-    "compilerOptions": {}
+  "projectFileVersion": 4,
+  "sourceFiles": [
+    "***~*",
+    "**/*.yarn",
+    "*.yarn"
+  ],
+  "excludeFiles": [],
+  "localisation": {},
+  "baseLanguage": "en",
+  "compilerOptions": {},
+  "projectName": "MEG",
+  "authorName": [
+    "Ash"
+  ]
 }
