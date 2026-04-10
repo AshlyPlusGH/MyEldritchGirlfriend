@@ -105,7 +105,7 @@ namespace Ash {
         #region Public Calls
             /// <summary> Loads a scene additively and sets it active. </summary>
             public static void LoadScene(string sceneName) { InstancedCheck(); QueueRoutine(COROUTINE_LoadScene(sceneName)); }
-
+            
             /// <summary> Unloads a specific scene by name. </summary>
             public static void UnloadScene(string sceneName){ InstancedCheck(); QueueRoutine(COROUTINE_UnloadScene(sceneName)); }
 

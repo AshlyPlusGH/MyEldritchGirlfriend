@@ -1,7 +1,5 @@
-using System;
-using UnityEngine;
-
 // Used to Store Project-Wide Structs
+//
 public struct MinMaxInt
 {
     public int min;
@@ -12,4 +10,13 @@ public struct MinMaxInt
         min = minCONTRUCTOR;
         max = maxCONTRUCTOR;
     }
+}
+
+public struct CompletionData
+{
+    public int lovePoints;
+    public int nightsUninjured;
+    public int menInRedKilled;
+
+    public int flowersCollected;
 }

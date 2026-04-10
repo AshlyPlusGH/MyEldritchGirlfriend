@@ -16,4 +16,6 @@ MonoBehaviour:
     list:
     - Key: Day_One_Introduction
       Value: {fileID: 11400000, guid: 5c5872e871a4b644a82971e2ea9855f9, type: 2}
+    - Key: Day_One_Body
+      Value: {fileID: 11400000, guid: 354423e93e71f13409d2932d12036487, type: 2}
     keyCollision: 0

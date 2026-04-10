@@ -10,3 +10,9 @@ public enum ENUM_Example
     Two,
     Three
 }
+
+[Serializable]
+public enum ENUM_CollectableTypes
+{
+    Flower
+}

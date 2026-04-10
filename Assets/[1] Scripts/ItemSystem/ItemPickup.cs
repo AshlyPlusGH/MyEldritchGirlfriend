@@ -51,7 +51,9 @@ public class ItemPickup : MonoBehaviour
 
     public void Pickup()
     {
-        if (itemToBePickedUp.STAT_collectible){  }
+        #region TEMP FIX ADD COLLECTABLE ITEM CLASS
+        if (itemToBePickedUp.STAT_collectible){ GameManager.AddCollectable(ENUM_CollectableTypes.Flower); }
+        #endregion
         else { Inventory.AddItem(itemToBePickedUp); }
         SFX.Play(pickupSFX, transform.position);
         unityEventOnItemPickup.Invoke();

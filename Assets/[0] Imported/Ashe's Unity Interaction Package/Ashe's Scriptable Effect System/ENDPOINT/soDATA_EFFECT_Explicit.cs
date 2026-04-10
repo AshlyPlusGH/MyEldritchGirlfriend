@@ -19,6 +19,12 @@ namespace Ash{
                     case EFFECT_ExplicitType.ThrowKnife:
                         KnifeThrower.ThrowKnife();
                         break;
+                    case EFFECT_ExplicitType.EndDay:
+                        GameManager.EndDay();
+                        break;
+                    case EFFECT_ExplicitType.EndNight:
+                        GameManager.EndNight();
+                        break;
                     case EFFECT_ExplicitType.SwitchTo3D:
                         GameManager.SwitchTo3D();
                         break;
@@ -33,6 +39,8 @@ namespace Ash{
         {
             None,
             ThrowKnife,
+            EndDay,
+            EndNight,
             SwitchTo3D,
             SwitchTo2D
         }
