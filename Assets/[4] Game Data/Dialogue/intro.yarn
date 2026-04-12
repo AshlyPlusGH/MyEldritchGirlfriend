@@ -33,25 +33,34 @@ Megan: Let's Go!
 
 title: Day_One_Body
 color: green
-position: 47,282
+position: 22,284
 ---
 ...
 A buttery fog settles in around the two of you.
 The old La'Gato theatre creaks and splutters into life as the morning's scheduled entertainment flickers into motion on the screen.
 DATE GOES HERE...
-Trigger 3D Scene Change...
+<<jump End_Day>>
 ===
 
-title: Day_Two_PLACEHOLDER
+title: Day_Two_Introduction
 color: yellow
-position: 317,290
+position: 317,299
 ---
 DAY 2
+<<jump End_Day>>
 ===
 
-title: Day_Three_PLACEHOLDER
+title: Day_Three_Introduction
 color: red
-position: 327,498
+position: 573,305
 ---
 DAY 3
+<<jump End_Day>>
+===
+
+title: End_Day
+color: purple
+position: 251,569
+---
+Ending Day...
 ===
