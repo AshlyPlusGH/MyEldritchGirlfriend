@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 
 //Runs any code that is GameState related and holds commonly used methods not relating to any one system.
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private bool debug;
         private void Log(string contents){ if (debug){ Debug.Log(contents); }}
@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
 
     void Awake(){ Setup(); }
+
     public void Setup()
     {
         if (instance != null){ Destroy(gameObject); return; }
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
     }
 
     #region COMPLETION CALLS
-        public static void AddCollectable(ENUM_CollectableTypes type)
+    public static void AddCollectable(ENUM_CollectableTypes type)
         {
             switch (type)
             {
@@ -206,4 +207,16 @@ public class GameManager : MonoBehaviour
     {
         TriggerEndScreen();
     }
+
+    #region DATA PERSISTENCE
+    public void SaveData(ref GameData data)
+    {
+        data.dayCount = dayCount;
+    }
+
+    public void LoadData(GameData data)
+    {
+        dayCount = data.dayCount;
+    }
+    #endregion
 }
