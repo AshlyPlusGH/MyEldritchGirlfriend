@@ -11,10 +11,23 @@ public class UI_DialogueStarter : MonoBehaviour
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private string startNode = "Intro";
 
+    //bool hasRan = false;
+
+    /*
     private void OnEnable()
+    {
+        if (hasRan){ return; }
+
+        StartDialogue();
+    }
+    */
+
+    public void StartDialogue()
     {
         Log("Starting Dialogue!");
         
         _ = dialogueRunner.StartDialogue(startNode);
+
+        //hasRan = true;
     }
 }

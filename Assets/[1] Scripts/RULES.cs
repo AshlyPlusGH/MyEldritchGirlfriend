@@ -11,5 +11,9 @@ public class RULES
     public const float survivedNightsCompletionWeight = 0.3f/totalNights;
     public const float lovePointCompletionWeight = 0.4f/totalLovePoints;
 
-    public const float nightLength = 300;
+    public const float nightLength = 10;
+
+    public const string dayOneNode = "Day_One_Introduction";
+    public const string dayTwoNode = "Day_Two_Introduction";
+    public const string dayThreeNode = "Day_Three_Introduction";
 }
