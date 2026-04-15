@@ -26,7 +26,7 @@ public class ItemPickup : MonoBehaviour
     [Button] public void Setup()
     {
             if (itemToBePickedUp == null){ Destroy(gameObject); return; }
-            if (itemModel != null){ UpdateUX(false); return; }
+            if (itemModel != null){ Destroy(itemModel); }
         itemModel = Instantiate(itemToBePickedUp.STAT_itemModel, itemModelHandle);
 
         UpdateUX(false);

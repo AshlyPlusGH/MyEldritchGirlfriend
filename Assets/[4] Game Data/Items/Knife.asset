@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: Assembly-CSharp::soDATA_Item
   soDATA_sprite: {fileID: 21300000, guid: 2ac0d6cd60ccfb24188335fd391819fd, type: 3}
-  soDATA_itemUseEffect: {fileID: 11400000, guid: 39403bd4445aab34aa20d2d2deee84bb, type: 2}
+  soDATA_itemUseEffect: {fileID: 11400000, guid: b9fbfa125eda45748899ca4bd3370e37, type: 2}
   soDATA_itemModel: {fileID: 919132149155446097, guid: aff042f743bbd084d8217f43493f3ec9, type: 3}
   soDATA_collectible: 0
