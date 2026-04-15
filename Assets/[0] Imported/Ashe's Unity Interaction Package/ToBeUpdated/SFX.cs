@@ -12,6 +12,12 @@ public class SFX : MonoBehaviour
 
     private static SFX instance;
 
+    void Awake()
+    {
+        if (instance == null){ instance = this; }
+        else { Destroy(this); }
+    }
+
     public static void Play(AudioClip clip, Vector3 position = new Vector3())
     {
         SFXOneShot oneShot = Instantiate(instance.SFXOneShotPrefab, position, Quaternion.identity).GetComponent<SFXOneShot>();

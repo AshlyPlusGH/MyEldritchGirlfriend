@@ -104,6 +104,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1457766273643428036}
     - target: {fileID: 3410098019003503936, guid: 08a8919b1cb26d84ca0b3185b469f847, type: 3}
+      propertyPath: pickupSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: f47255825830f5547a28f7f85c056bd0, type: 3}
+    - target: {fileID: 3410098019003503936, guid: 08a8919b1cb26d84ca0b3185b469f847, type: 3}
       propertyPath: itemToBePickedUp
       value: 
       objectReference: {fileID: 11400000, guid: 6da31f38d20cdb84e8bc767ac59171f7, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd7dc737836fea48ac7daa2a88525e6, type: 3}
   m_Name: Sigil_P
   m_EditorClassIdentifier: Assembly-CSharp::soDATA_Item
-  soDATA_sprite: {fileID: 0}
+  soDATA_sprite: {fileID: 21300000, guid: 15bd9e7d1b6a8bb45a9d3335f59f128d, type: 3}
   soDATA_itemUseEffect: {fileID: 0}
   soDATA_itemModel: {fileID: 919132149155446097, guid: 079f5aa3bba45d64992fe3304375de36, type: 3}
+  soDATA_collectible: 0

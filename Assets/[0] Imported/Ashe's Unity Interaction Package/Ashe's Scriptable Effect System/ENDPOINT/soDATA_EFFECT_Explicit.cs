@@ -31,6 +31,9 @@ namespace Ash{
                     case EFFECT_ExplicitType.SwitchTo2D:
                         GameManager.SwitchTo2D();
                         break;
+                    case EFFECT_ExplicitType.AddLovePoint:
+                        GameManager.AddLovePoint();
+                        break;
                 }
             }
         }
@@ -42,7 +45,8 @@ namespace Ash{
             EndDay,
             EndNight,
             SwitchTo3D,
-            SwitchTo2D
+            SwitchTo2D,
+            AddLovePoint
         }
     }
 }

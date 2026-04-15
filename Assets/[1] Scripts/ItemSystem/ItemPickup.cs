@@ -55,7 +55,7 @@ public class ItemPickup : MonoBehaviour
         if (itemToBePickedUp.STAT_collectible){ GameManager.AddCollectable(ENUM_CollectableTypes.Flower); }
         #endregion
         else { Inventory.AddItem(itemToBePickedUp); }
-        SFX.Play(pickupSFX, transform.position);
+        if (pickupSFX != null) SFX.Play(pickupSFX, transform.position);
         unityEventOnItemPickup.Invoke();
         Destroy(gameObject); 
     }

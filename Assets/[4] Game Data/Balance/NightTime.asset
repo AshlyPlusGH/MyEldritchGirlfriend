@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544771808dc836d41ad4b885ab89da50, type: 3}
   m_Name: NightTime
   m_EditorClassIdentifier: Assembly-CSharp::soDATA_TimeSystemBalanceData
-  soDATA_nightLength: 5
+  soDATA_nightLength: 30

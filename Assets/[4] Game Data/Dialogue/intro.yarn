@@ -46,6 +46,7 @@ title: Day_Two_Introduction
 color: yellow
 position: 317,299
 ---
+//<<jump Change_Background_Cafe>>
 DAY 2
 <<jump End_Day>>
 ===
@@ -54,8 +55,17 @@ title: Day_Three_Introduction
 color: red
 position: 573,305
 ---
+//<<jump Change_Background_House>>
 DAY 3
 <<jump End_Day>>
+===
+
+title: Ending
+color: red
+position: 573,305
+---
+//<<jump Change_Background_Misc>>
+Congratulations
 ===
 
 title: End_Day
@@ -63,4 +73,32 @@ color: purple
 position: 251,569
 ---
 Ending Day...
+===
+
+title: Add_LovePoint
+color: purple
+position: 251,569
+---
+Adding Love Point...
+===
+
+title: Change_Background_Cafe
+color: purple
+position: 251,569
+---
+Changing Background...
+===
+
+title: Change_Background_House
+color: purple
+position: 251,569
+---
+Changing Background...
+===
+
+title: Change_Background_Misc
+color: purple
+position: 251,569
+---
+Changing Background...
 ===

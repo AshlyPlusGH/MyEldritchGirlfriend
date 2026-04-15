@@ -18,4 +18,12 @@ MonoBehaviour:
       Value: {fileID: 11400000, guid: 5c5872e871a4b644a82971e2ea9855f9, type: 2}
     - Key: End_Day
       Value: {fileID: 11400000, guid: 354423e93e71f13409d2932d12036487, type: 2}
+    - Key: Add_LovePoint
+      Value: {fileID: 11400000, guid: 354423e93e71f13409d2932d12036487, type: 2}
+    - Key: Change_Background_Cafe
+      Value: {fileID: 11400000, guid: afb207331b80bef468bd27621d6c4b82, type: 2}
+    - Key: Change_Background_House
+      Value: {fileID: 11400000, guid: 8586686e99cd9fa439fd5eb1cfb67ea1, type: 2}
+    - Key: Change_Background_Misc
+      Value: {fileID: 11400000, guid: 659b75c2cb8161246b844ac033887dad, type: 2}
     keyCollision: 0

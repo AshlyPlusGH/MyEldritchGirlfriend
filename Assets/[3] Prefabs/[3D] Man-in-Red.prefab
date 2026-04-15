@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4258401425587582658}
   - component: {fileID: 4978326532647139195}
+  - component: {fileID: 3240580358229375280}
   m_Layer: 0
   m_Name: '[3D] Man-in-Red'
   m_TagString: Untagged
@@ -94,6 +95,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3240580358229375280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430594363021216026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f336e0cdc2997bd49883ff99f8edf89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  debug: 0
+  var1: 0
 --- !u!1 &4047673710819582692
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3526419656965263533}
   - component: {fileID: 8605045717607885151}
+  - component: {fileID: 1277103110643702725}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -141,12 +157,52 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 119
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1277103110643702725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4047673710819582692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8a9c51b20c46d4594272575bf55dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ash.UnityEventOnCollision
+  debug: 0
+  watchedColliders: []
+  watchedColliders2D: []
+  isTriggeredOnce_OnEnter: 0
+  unityEventOnEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3240580358229375280}
+        m_TargetAssemblyTypeName: DestroyGameObject, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isTriggeredOnce_OnStay: 0
+  unityEventOnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  isTriggeredOnce_OnExit: 0
+  unityEventOnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerType: 0
 --- !u!1 &6615455280947818192
 GameObject:
   m_ObjectHideFlags: 0
